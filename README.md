@@ -21,3 +21,4 @@ Then include in your Handlebars template:
 
 ### Credits
 
+Based on wbartley's [accounts-fitbit](https://github.com/wbartley/accounts-fitbit)

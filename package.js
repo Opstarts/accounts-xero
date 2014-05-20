@@ -15,6 +15,5 @@ Package.on_use(function(api) {
 
   	api.add_files('xero.js');
 	  api.add_files('xero_common.js', ['client', 'server']);
-
 });
 
