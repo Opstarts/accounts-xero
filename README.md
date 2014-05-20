@@ -1,4 +1,4 @@
-Xero OAuth for Meteor
+Xero OAuth for Meteor (Under Development)
 ===============
 
 accounts-xero allows oAuth via the Xero API
