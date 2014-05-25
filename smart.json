@@ -1,6 +1,6 @@
 {
 	"name": "accounts-xero",
-	"description": "Xero OAuth login service for Meteor",
+	"description": "Xero oAuth login service for Meteor",
 	"homepage": "https://github.com/axwaxw/accounts-xero",
 	"author": "Alex Webster",
 	"version": "0.1.0",
