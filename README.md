@@ -21,11 +21,13 @@ Then include in your Handlebars template:
 
 ###TO DO / Contributions
 
-Contributions are welcome.
-
-TO DO:
+Contributions are welcome.  TO DO:
 
 Unlike the oAuth services upon which this is based (twitter and fitbit), The Xero API does not return the current user.  The servideData (see https://github.com/axwaxw/xero ) is currently hard-coded and it would be better to retun e.g. the organisation name / id
+
+###API Calls
+
+An API package for Xero is under development here: https://github.com/axwaxw/xero-api
 
 ### Credits
 
