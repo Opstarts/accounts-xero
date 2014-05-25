@@ -1,9 +1,9 @@
 Accounts.oauth.registerService('xero');
 
 if (Meteor.isClient) {
-  Meteor.loginWithXero = function (options, callback) {
+  Meteor.loginWithxero = function(options, callback) {
     // support a callback without options
-    if (!callback && typeof options === "function") {
+    if (! callback && typeof options === "function") {
       callback = options;
       options = null;
     }
@@ -11,17 +11,14 @@ if (Meteor.isClient) {
     var credentialRequestCompleteCallback = Accounts.oauth.credentialRequestCompleteHandler(callback);
     xero.requestCredential(options, credentialRequestCompleteCallback);
   };
-}
-else {
+} else {
 
-  var autopublishedFields = _.map(
-    xero.whitelistedFields.concat(['id', 'displayName']),
-    function (subfield) {
-      return 'services.xero.' + subfield;
-    });
+var autopublishedFields = _.map(
+   xero.whitelistedFields.concat(['id', 'name']),
+  function (subfield) { return 'services.xero.' + subfield; });
 
-  Accounts.addAutopublishFields({
-    forLoggedInUser: autopublishedFields,
-    forOtherUsers: autopublishedFields
-  });
+Accounts.addAutopublishFields({
+  forLoggedInUser: autopublishedFields,
+  forOtherUsers: autopublishedFields
+});
 }
