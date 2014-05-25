@@ -1,7 +1,9 @@
-Xero OAuth for Meteor
-=====================
+Xero oAuth Flow for Meteor
+====================
 
-accounts-xero allows oAuth via the Xero API
+This package allows oAuth via the Xero API
+
+[Xero - Beautiful accounting software](http://www.xero.com)
 
 Latest Version: **0.1.0**
 
