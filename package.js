@@ -6,18 +6,18 @@ Package.describe({
   version: '0.1.1',
   name: 'andylash:accounts-xero',
   git: 'https://github.com/Opstarts/accounts-xero.git',
+  documentation: null,
 });
 
 
 Package.on_use(function(api) {
-  api.use('underscore', ['server']);
-  api.use('accounts-base', ['client', 'server']);
-  api.imply('accounts-base', ['client', 'server']);
-  api.use('accounts-oauth', ['client', 'server']);
-  api.use('ecmascript', ['client', 'server']);
+  api.use('underscore@1.0.9', ['server']);
+  api.use('accounts-base@1.2.11', ['client', 'server']);
+  api.use('accounts-oauth@1.1.13', ['client', 'server']);
+  api.use('ecmascript@0.5.8', ['client', 'server']);
   api.use('andylash:xero@0.1.1', ['client', 'server']);
 
-  api.use('http', ['client', 'server']);
+  api.use('http@1.2.9', ['client', 'server']);
 
   api.add_files('xero_login_button.css', 'client');
 
